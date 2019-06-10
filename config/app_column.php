@@ -1,0 +1,24 @@
+<?php
+return array(
+'name',
+'furigana',
+'gender',
+'age',
+'prefecture',
+'phone',
+'company',
+'company_num',
+'education',
+'job_class',
+'gyoukai',
+'salary',
+'hope_place',
+'hope_job_class',
+'hope_gyoukai',
+'mail',
+'education_detail',
+'skill',
+'shokumu_abst',
+'PR',
+'motivation'
+);
