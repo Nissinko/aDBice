@@ -24,7 +24,7 @@
     a {
         font-size: 18px;
     }
-    #csv{
+    #watch{
         margin-right: 100px;
     }
     #revise, #stop{
@@ -43,7 +43,8 @@
     @if ($send->running == 0)
         <h3>掲載停止中</h3>
     @endif
-    <a id="csv" href={{ $send->url . "/csv" }}>求人票をダウンロードする</a>
+    {{--<a id="csv" href={{ $send->url . "/csv" }}>求人票をダウンロードする</a>--}}
+    <a id="watch" href={{"/storage/job_" . $num . ".pdf"}}>求人票PDFを閲覧する</a>
     <a id="selection" href={{ $send->url . "/selection" }}>応募者を管理する</a>
     <a id="upload" href={{ $send->url . "/upload" }}>PDFアップロード</a>
     <h2>企業詳細</h2>
