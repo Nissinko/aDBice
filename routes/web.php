@@ -155,7 +155,8 @@ Route::group(['middleware' => ['auth', 'can:admin-higher']], function () {
         $comdata = $company->where('company', $send->company)->get();
         return view('eachjob', [
             'send'=>$send,
-            'company'=>$comdata[0]
+            'company'=>$comdata[0],
+            'num'=>$num
         ]);
     });
 
